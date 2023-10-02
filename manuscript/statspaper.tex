@@ -1,0 +1,286 @@
+\documentclass{beamer}
+\usetheme{Darmstadt}
+\usepackage[style=apa, backend=biber]{biblatex}
+\addbibresource{refs.bib}
+
+%Information to be included in the title page:
+\title{Fundamental Structure of Statistical Papers}
+\author{Shuiyi Hu}
+\institute{University of Connecticut}
+\date{October 2023}
+\setbeamertemplate{footline}[frame number]
+
+
+\begin{document}
+
+\frame{\titlepage}
+
+
+\begin{frame}{Fundamental Structure of Statistical Papers}
+    \begin{columns}
+        \column{0.5\textwidth}
+            \centering
+            \begin{itemize}
+                \item Title
+                \item Abstract
+                \item Keywords
+                \item Introduction
+                \item Data
+                \item Methods
+            \end{itemize}
+        \column{0.5\textwidth}
+            \centering
+            \begin{itemize}
+                \item Simulation
+                \item Application
+                \item Discussion and Conclusion
+                \item Appendix
+                \item Acknowledgements
+                \item Reference
+            \end{itemize}
+        \end{columns}
+    \end{frame}
+    
+    
+    \begin{frame}{Title}
+    The title of a paper is usually determined when the paper is close to completion.\\
+    Goals:
+    \begin{itemize}
+        \item Predict the content of the research paper
+        \item Be interesting to the reader
+        \item Reflect the tone of the writing
+        \item Contain important keywords
+    \end{itemize}
+    
+    \end{frame}
+    
+    
+    \begin{frame}{Title}
+    
+    Tips:
+    \begin{itemize}
+        \item Be informative by including these aspects: topic, method(s), data, and results.
+        \item Consider adding a subtitle to give more specifics about the paper.
+        \item Use appropriate critical keywords to increase the discoverability of the paper.
+        \item Follow the requirements from the instructions or journals.
+        \item Keep it as concise as possible.
+    \end{itemize}
+    
+    \end{frame}
+    
+    
+    \begin{frame}{Abstract}
+    \begin{itemize}
+        \item A balance between the twin goals of brevity and maximal information content should be carefully sought.
+        \item Make sure each high point is included.
+        \item Recommendations for length must be more case dependent.
+        \item Mathematical notation is rarely useful in the abstract.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Abstract}
+    \begin{itemize}
+        \item Open with a sentence to establish the importance of the subject of the paper.
+        \item Identify a gap in the literature to set up the background of the paper.
+        \item Highlight the novelty/contributions of the paper.
+        \item It must make sense when read in isolation for those who only read the abstract, and must also provide a clear and accurate summary of the manuscript for readers who read the entire manuscript.
+        \item Should not include citations.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Keywords}
+    \begin{itemize}
+        \item Keywords are words in addition to those in the title that attract search queries.
+        \item Including the most relevant keywords helps other researchers find your paper.
+        \item Tips:
+        \begin{itemize}
+            \item No need to repeat anything in the title already.
+            \item List them in alphabetical order.
+            \item Contain words and phrases that suggest what the topic is about.
+        \end{itemize}
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Introduction}
+    \begin{itemize}
+        \item The introduction section is always the first section of a paper.
+        \item The purpose of the introduction is to stimulate the reader’s interest and to provide background information which is pertinent to the study.
+        \item The introduction section guides the readers from a general subject area to the narrow topic of the paper.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Introduction}
+    \begin{itemize}
+        \item The introduction sections need to explain the importance of the topic of the paper, provide the background of the research work, and highlight the contributions of the work.
+        \item The introduction is typically outlined at the very beginning of the writing process, but completed towards the end after the other sections have been written.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Introduction}
+    An introduction often contains the following items:
+    \begin{itemize}
+        \item An overview of the topic.
+        \item Existing works.
+        \item A gap.
+        \item Contributions.
+        \item A roadmap.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Data}
+    \begin{itemize}
+        \item Who collected the data?
+        \item How was the data collected? Sampling frame? Sampling approach?
+        \item What period or range does the data cover?
+        \item Why does the data help answer the research question?
+        \item What exploratory analyses are done?
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Methods}
+    \begin{itemize}
+        \item Establish notation.
+        \item Notation is much easier to digest if the reader first understands the main idea at an intuitive level.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Methods}
+    \begin{itemize}
+        \item What are the observed data?
+        \item What are the models?
+        \item What are the parameters to be estimated?
+        \item How are the point estimators obtained?
+        \item How are the uncertainty (standard errors) of the point estimators assessed?
+        \item How are the variances of the point estimators estimated?
+        \item How are the null distribution of the testing statistics established?
+        \item Clearly state the assumptions and claims of theoretical results.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Simulation}
+    ADEMP(\citet{Morris}):
+    \begin{itemize}
+        \item Aims
+        \item Data generating mechanism
+        \item Estimand/target of analysis
+        \item Methods
+        \item Performance measures
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Simulation}
+    \begin{itemize}
+        \item Presentation of results
+        \begin{itemize}
+            \item May be included in a Results section.
+            \item For each table/figure, write down the bullet points to convey to the readers.
+            \item Group the bullet points in blocks and put the blocks in a logical order.
+            \item Within each block, put the bullet points in the right logical order.
+            \item Some (shorter) blocks can be converted into proper paragraphs in the final paper, while other (longer) blocks may remain in bullet form.
+        \end{itemize}
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Application}
+    \begin{itemize}
+        \item Report the statistical analyses in tables/figures.
+        \item When summarizing from tables/figures, paint the big picture, rather than reiterating all of the little details.
+        \item Discussions to link the analyses back to the substantive topic.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Discussion and Conclusion}
+    \begin{itemize}
+        \item A summary of the contributions of the research.
+        \item The research question posed as the `need’ of the introduction must be answered here.
+        \item Limitations of the current study.
+        \item Future directions.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Appendix}
+    \begin{itemize}
+        \item Technical details that would otherwise break the flow of the main text.
+        \begin{itemize}
+            \item proofs
+            \item algorithms
+        \end{itemize}
+        \item Data source details.
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Acknowledgements}
+    \begin{itemize}
+        \item Optional
+        \item Be used to acknowledge certain individuals who have contributed to the research and/or success of the manuscript
+        \item funding agency and funding mechanism are typically included here unless otherwise specified
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Reference}
+    \begin{itemize}
+        \item Every reference cited in the paper should appear here.
+        \item References not cited should not appear here.
+        \item All are automatically taken care of by BibTeX.
+        \item Styles are controlled by bib style (.bst file).
+    \end{itemize}
+    \end{frame}
+    
+    
+    \begin{frame}{Example}
+    \begin{itemize}
+        \item Title: Uncertainty in optimal fingerprinting is underestimated
+        \item Keywords: bootstrap calibration, climate change, confidence interval, detection and attribution, natural climate variability,
+    uncertainty quantification
+        \item Abstract
+        \item Introduction
+        \item Methods
+        \begin{itemize}
+            \item Optimal fingerprinting
+            \item Simulation experiment design
+            \item Data preparation for application to mean
+    temperature
+        \end{itemize}
+    \end{itemize} 
+    \end{frame}
+    
+    
+    \begin{frame}{Example(Continued)}
+    \begin{itemize}
+        \item Results
+        \begin{itemize}
+            \item Simulated experiments (with figures)
+            \item Detection and attribution of changes in mean temperature
+    temperature (with figures)
+        \end{itemize}
+        \item Conclusion
+        \item Data availability statement
+        \item Funding, Author contributions, Conflict of interest
+        \item Appendix
+        \item ORCID iDs, References
+    \end{itemize} 
+    \end{frame}
+
+
+\begin{frame}
+  \frametitle{References}
+  \printbibliography
+\end{frame}
+
+
+\end{document}
