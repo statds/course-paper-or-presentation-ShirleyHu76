@@ -1,7 +1,9 @@
 \documentclass{beamer}
 \usetheme{Darmstadt}
-\usepackage[style=apa, backend=biber]{biblatex}
-\addbibresource{refs.bib}
+\usepackage{bibentry}
+\usepackage{natbib}
+% \usepackage[backend=biber]{biblatex}
+% \addbibresource{refs.bib}
 
 %Information to be included in the title page:
 \title{Fundamental Structure of Statistical Papers}
@@ -57,7 +59,7 @@
     
     \begin{frame}{Title}
     
-    Tips:
+    Tips \citep{Yan2023}:
     \begin{itemize}
         \item Be informative by including these aspects: topic, method(s), data, and results.
         \item Consider adding a subtitle to give more specifics about the paper.
@@ -167,7 +169,7 @@
     
     
     \begin{frame}{Simulation}
-    ADEMP(\citet{Morris}):
+    ADEMP \citep{Morris2019}:
     \begin{itemize}
         \item Aims
         \item Data generating mechanism
@@ -243,6 +245,7 @@
     
     
     \begin{frame}{Example}
+    Example \citep{Li2021}
     \begin{itemize}
         \item Title: Uncertainty in optimal fingerprinting is underestimated
         \item Keywords: bootstrap calibration, climate change, confidence interval, detection and attribution, natural climate variability,
@@ -279,7 +282,8 @@
 
 \begin{frame}
   \frametitle{References}
-  \printbibliography
+  \bibliography{refs}
+  \bibliographystyle{mcap}
 \end{frame}
 
 
